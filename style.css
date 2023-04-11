@@ -1,0 +1,65 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(104, 99, 92);
+}
+div.calculator{
+    display: grid;
+    justify-content: center;
+    margin:50px auto 0;
+    padding: 40px 0 40px;
+    min-width: 500px;
+    min-height: 600px;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows:repeat(5,100px) ;
+    background-color: rgb(0, 0, 0);
+    border:1px solid ;
+    width:fit-content;
+    gap:10px;
+    border-radius: 60px;
+}
+.calculator button{
+    cursor:pointer;
+    font-size: 2rem;
+    border-radius:50%;
+    border:3px solid black;
+    outline: none;
+    background-color: rgb(71, 66, 66);
+    color:rgb(231, 227, 227);
+
+}
+div.calculator button:hover ,button.orange:hover{
+    background-color: rgba(199, 33, 33, 0.911) ;
+}
+button.span-two{
+    grid-column: span 2;
+    border-radius: 25%;
+}
+.zero{
+    height: 100px;
+}
+button.orange{
+    background-color: orange ;
+    font-weight: 900;
+}
+button.gray-button{
+    background-color: rgba(128, 128, 128, 0.719);
+}
+.output{
+    grid-column:  1/-1;
+    /* background-color:rgb(145, 144, 144); */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+}
+.output .previous-screen{
+    font-size: 1.5rem;
+    color:rgba(255, 255, 255, 0.75)
+}
+.output .current-screen{
+    font-size: 2.5rem;
+    color:rgb(255, 255, 255)
+}
